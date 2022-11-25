@@ -50,7 +50,7 @@ Nonterminal Resolutions:
 <float> --> FLOAT
 <method_id> --> METHOD_IDENTIFIER
 String Literal:
-# let’s only allow strings with double quotes: “ “, not ‘ ‘ or “”” “””, etc, for simplicity.
+Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “””, etc, for simplicity.
 <string_literal> --> “STRING_LITERAL {STRING_LITERAL}”
 Boolean:
 <boolean> --> True | False
