@@ -1,4 +1,3 @@
-# project part 2 electric boogaloo: syntax analyzer
 from treelib import Tree # import to create a tree
 from executor import execution # import from executor file to call this function at the end
 nextTokenCounter = 0 # keep track of position in token/lexeme tuple array
