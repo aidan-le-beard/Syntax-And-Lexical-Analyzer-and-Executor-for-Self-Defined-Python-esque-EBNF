@@ -102,19 +102,24 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 ### Sample File and Parse Tree Output
 
-\# This is a test program that will be run
+`\# This is a test program that will be run
+
 \# By the lexical analyzer.
 
 \# showing assigning a boolean variable
+
 works = True
 
 \# showing assigning an integer variable
+
 x = 1
 
 \# showing creating a function definition that takes 3 arguments
+
 def main (x, y, z):
 
     # showing functioning if statement inside a function
+    
     if works:
     
         while x < 12:
@@ -126,6 +131,7 @@ def main (x, y, z):
     elif x == 2:
         
         # showing working nested if statement
+        
         if not works:
             print("4")
         endif
@@ -148,6 +154,6 @@ if True:
     x = 4
 endif
     
-main(2, 1, 3)
+main(2, 1, 3)`
 
 [Source.gv.pdf](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095240/Source.gv.pdf)
