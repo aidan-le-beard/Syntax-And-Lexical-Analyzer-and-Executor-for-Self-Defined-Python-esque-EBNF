@@ -1,4 +1,4 @@
-# Syntax-And-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF
+# Tokenizer (Lexical Analyzer), Parser (Syntax Analyzer), and Executor for Self-Defined Python-esque EBNF
 
 
 
