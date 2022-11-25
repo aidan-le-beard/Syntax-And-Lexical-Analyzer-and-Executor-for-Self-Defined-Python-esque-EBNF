@@ -20,7 +20,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 #### OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
 
-\<assign\> --\> \<id\> (= | += | -= | *= | /= | %= | //= | ^= | \*\*= | <<= | >>=) \<expr\> \n
+\<assign\> --\> \<id\> (= | += | -= | *= | /= | %= | //= | ^= | **= | \<\<= | \>\>=) \<expr\> \n
 
 \<expr\> --\> \<term\> {or \<term\>}
 
@@ -61,7 +61,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 #### WHILE (EBNF) WITH ENDWHILE: #only allowing no parentheses () \<expr\>
 
-\<while\> --\> while \<expr\>: \n \<statement\> \n {\<statement\> \n}  endwhile \n
+\<while\> --\> while \<expr\>: \n \<statement\> {\<statement\>} endwhile \n
 
 
 
@@ -77,7 +77,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 #### Function definition EBNF:
 
-\<define\> --\> def \<method_id\> ([\<id\> {, \<id\>}]): \n \<statement\> \n {\<statement\> \n} enddef \n
+\<define\> --\> def \<method_id\> ([\<id\> {, \<id\>}]): \n \<statement\> {\<statement\>} enddef \n
 
 
 #### Nonterminal Resolutions:
@@ -94,7 +94,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “””, etc, for simplicity.
 
-\<string_literal\> --\> “STRING_LITERAL {STRING_LITERAL}”
+\<string_literal\> --\> “{STRING_LITERAL}”
 
 ##### Boolean:
 
