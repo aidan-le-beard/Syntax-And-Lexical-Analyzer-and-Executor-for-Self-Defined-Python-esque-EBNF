@@ -102,16 +102,16 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 ### Sample File and Parse Tree Output
 
-# This is a test program that will be run
-# By the lexical analyzer.
+\# This is a test program that will be run
+\# By the lexical analyzer.
 
-# showing assigning a boolean variable
+\# showing assigning a boolean variable
 works = True
 
-# showing assigning an integer variable
+\# showing assigning an integer variable
 x = 1
 
-# showing creating a function definition that takes 3 arguments
+\# showing creating a function definition that takes 3 arguments
 def main (x, y, z):
 
     # showing functioning if statement inside a function
