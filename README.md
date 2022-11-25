@@ -1,5 +1,11 @@
 # Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF
 
+
+
+You do NOT have permission to use this code for any schoolwork purposes under any circumstances. You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
+
+
+
 This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip.
 
 To run the project:
