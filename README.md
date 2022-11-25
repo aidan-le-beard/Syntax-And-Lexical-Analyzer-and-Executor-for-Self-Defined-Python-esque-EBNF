@@ -30,7 +30,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 \<factor2\> --\> \<factor3\> {(== | \<= | \>= | != | \> | \< | is | is not | in | not in) \<factor3\>}
 
-\<factor3\> --\> \<factor4\> { \<factor4\>}
+\<factor3\> --\> \<factor4\> {| \<factor4\>}
 
 \<factor4\> --\> \<factor5\> {^ \<factor5\>}
 
