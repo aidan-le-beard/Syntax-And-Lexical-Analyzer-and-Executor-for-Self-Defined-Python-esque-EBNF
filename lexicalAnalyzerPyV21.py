@@ -83,7 +83,7 @@ def main():
     errors = {}
     
     # create a dictionary of identifiers that haven't been identified
-    # unidentifiedIdentifiers = {} # Not sure what this is? Not currently being used. Maybe to check variables are declared at some point
+    # unidentifiedIdentifiers = {} # not implemented yet
     
     # a list to store characters that can be concatenated with others: \n, operators, braces, etc
     # NOTE: we don't need characters such as ** or /* here if their components are already in here
