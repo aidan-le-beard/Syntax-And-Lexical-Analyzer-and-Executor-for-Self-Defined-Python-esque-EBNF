@@ -11,46 +11,83 @@ To run the project:
 XXX.py should be a file written in the grammar of the following EBNF (this is essentially limited Python with endif, endwhile, and enddef statements, rather than indentation):
 
 OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
-<assign> --> <id> (= | += | -= | *= | /= | %= | //= | ^= | **= | <<= | >>=) <expr> \n
-<expr> --> <term> {or <term>}
-<term> --> <factor> {and <factor>}
-<factor> --> [not] <factor2>
-<factor2> --> <factor3> {(== | <= | >= | != | > | < | is | is not | in | not in) <factor3>}
-<factor3> --> <factor4> { <factor4>}
-<factor4> --> <factor5> {^ <factor5>}
-<factor5> --> <factor6> {& <factor6>}
-<factor6> --> <factor7> {(<< | >>) <factor7>}
-<factor7> --> <factor8> {(+ | -) <factor8>}
-<factor8> --> <factor9> {(* | / | // | %) <factor9>}
-<factor9> --> <factor10> {(+x | -x | ~x) <factor10>}
-<factor10> --> <factor11> {** <factor11>}
-<factor11> --> ( <expr> ) | <parameter>
+
+\<assign\> --\> \<id\> (= | += | -= | *= | /= | %= | //= | ^= | \*\*= | <<= | >>=) \<expr\> \n
+
+\<expr\> --\> \<term\> {or \<term\>}
+
+\<term\> --\> \<factor\> {and \<factor\>}
+
+\<factor\> --\> [not] \<factor2\>
+
+\<factor2\> --\> \<factor3\> {(== | \<= | \>= | != | \> | \< | is | is not | in | not in) \<factor3\>}
+
+\<factor3\> --\> \<factor4\> { \<factor4\>}
+
+\<factor4\> --\> \<factor5\> {^ \<factor5\>}
+
+\<factor5\> --\> \<factor6\> {& \<factor6\>}
+
+\<factor6\> --\> \<factor7\> {(\<\< | \>\>) \<factor7\>}
+
+\<factor7\> --\> \<factor8\> {(+ | -) \<factor8\>}
+
+\<factor8\> --\> \<factor9\> {(* | / | // | %) \<factor9\>}
+
+\<factor9\> --\> \<factor10\> {(+x | -x | ~x) \<factor10\>}
+
+\<factor10\> --\> \<factor11\> {** \<factor11\>}
+
+\<factor11\> --\> ( \<expr\> ) | \<parameter\>
+
 
 Possible Method Parameters:
-<parameter> --> <id> |  <int_literal> | <FLOAT> | <string_literal> | <boolean>   
+
+\<parameter\> --\> \<id\> |  \<int_literal\> | \<FLOAT\> | \<string_literal\> | \<boolean\>   
+
 
 Method call:
-<method> --> <method_id>([<parameter> {, <parameter>}]) \n
 
-WHILE (EBNF) WITH ENDWHILE: #only allowing no parentheses () <expr>
-<while> --> while <expr>: \n <statement> \n {<statement> \n}  endwhile \n
+\<method\> --\> \<method_id\>([\<parameter\> {, \<parameter\>}]) \n
+
+
+WHILE (EBNF) WITH ENDWHILE: #only allowing no parentheses () \<expr\>
+
+\<while\> --\> while \<expr\>: \n \<statement\> \n {\<statement\> \n}  endwhile \n
+
+
 
 Statement: 
-<statement> --> <assign> | <if_statement> | <method> | <while>
+
+\<statement\> --\> \<assign\> | \<if_statement\> | \<method\> | \<while\>
+
  
 EBNF IF WITH ENDIF: 
-<if_statement> --> if <expr>: \n <statement> {<statement>} {elif <expr>: \n <statement>  {<statement>)} [else:\n <statement> {<statement>}] endif \n
+
+\<if_statement\> --\> if \<expr\>: \n \<statement\> {\<statement\>} {elif \<expr\>: \n \<statement\>  {\<statement\>)} [else:\n \<statement\> {\<statement\>}] endif \n
+
 
 Function definition EBNF:
-<define> --> def <method_id> ([<id> {, <id>}]): \n <statement> \n {<statement> \n} enddef \n
+
+\<define\> --\> def \<method_id\> ([\<id\> {, \<id\>}]): \n \<statement\> \n {\<statement\> \n} enddef \n
+
 
 Nonterminal Resolutions:
-<id> --> IDENTIFIER
-<int_literal> --> INT_LITERAL
-<float> --> FLOAT
-<method_id> --> METHOD_IDENTIFIER
+
+\<id\> --\> IDENTIFIER
+
+\<int_literal\> --\> INT_LITERAL
+
+\<float\> --\> FLOAT
+
+\<method_id\> --\> METHOD_IDENTIFIER
+
 String Literal:
+
 Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “””, etc, for simplicity.
-<string_literal> --> “STRING_LITERAL {STRING_LITERAL}”
+
+\<string_literal\> --\> “STRING_LITERAL {STRING_LITERAL}”
+
 Boolean:
-<boolean> --> True | False
+
+\<boolean\> --\> True | False
