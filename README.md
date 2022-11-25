@@ -2,9 +2,9 @@
 
 
 
-# You do NOT have permission to use this code for any schoolwork purposes under any circumstances. 
+## You do NOT have permission to use this code for any schoolwork purposes under any circumstances. 
 
-# You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
+## You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
 
 
 
@@ -18,7 +18,7 @@ To run the project:
 
 XXX.py should be a file written in the grammar of the following EBNF (this is essentially limited Python with endif, endwhile, and enddef statements, rather than indentation):
 
-OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
+#### OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
 
 \<assign\> --\> \<id\> (= | += | -= | *= | /= | %= | //= | ^= | \*\*= | <<= | >>=) \<expr\> \n
 
@@ -49,38 +49,38 @@ OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
 \<factor11\> --\> ( \<expr\> ) | \<parameter\>
 
 
-Possible Method Parameters:
+#### Possible Method Parameters:
 
 \<parameter\> --\> \<id\> |  \<int_literal\> | \<FLOAT\> | \<string_literal\> | \<boolean\>   
 
 
-Method call:
+#### Method call:
 
 \<method\> --\> \<method_id\>([\<parameter\> {, \<parameter\>}]) \n
 
 
-WHILE (EBNF) WITH ENDWHILE: #only allowing no parentheses () \<expr\>
+#### WHILE (EBNF) WITH ENDWHILE: #only allowing no parentheses () \<expr\>
 
 \<while\> --\> while \<expr\>: \n \<statement\> \n {\<statement\> \n}  endwhile \n
 
 
 
-Statement: 
+#### Statement: 
 
 \<statement\> --\> \<assign\> | \<if_statement\> | \<method\> | \<while\>
 
  
-EBNF IF WITH ENDIF: 
+#### EBNF IF WITH ENDIF: 
 
 \<if_statement\> --\> if \<expr\>: \n \<statement\> {\<statement\>} {elif \<expr\>: \n \<statement\>  {\<statement\>)} [else:\n \<statement\> {\<statement\>}] endif \n
 
 
-Function definition EBNF:
+#### Function definition EBNF:
 
 \<define\> --\> def \<method_id\> ([\<id\> {, \<id\>}]): \n \<statement\> \n {\<statement\> \n} enddef \n
 
 
-Nonterminal Resolutions:
+#### Nonterminal Resolutions:
 
 \<id\> --\> IDENTIFIER
 
@@ -90,12 +90,12 @@ Nonterminal Resolutions:
 
 \<method_id\> --\> METHOD_IDENTIFIER
 
-String Literal:
+##### String Literal:
 
 Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “””, etc, for simplicity.
 
 \<string_literal\> --\> “STRING_LITERAL {STRING_LITERAL}”
 
-Boolean:
+##### Boolean:
 
 \<boolean\> --\> True | False
