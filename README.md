@@ -1,4 +1,4 @@
-# Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF
+# Syntax-And-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF
 
 
 
