@@ -14,9 +14,9 @@ To run the project:
 
 1) open command prompt
 2) cd over to the folder where the files and test file are located
-3) run the command "python lexicalAnalyzerPyV21.py XXX.py"
+3) run the command "python lexicalAnalyzerPyV21.py XXX.xxx"
 
-XXX.py should be a file written in the grammar of the following EBNF (this is essentially limited Python with endif, endwhile, and enddef statements, rather than indentation):
+XXX.xxx should be a file written in the grammar of the following EBNF (this is essentially limited Python with endif, endwhile, and enddef statements, rather than indentation):
 
 #### OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
 
@@ -102,58 +102,6 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 ### Sample File and Parse Tree Output
 
-`\# This is a test program that will be run
-
-\# By the lexical analyzer.
-
-\# showing assigning a boolean variable
-
-works = True
-
-\# showing assigning an integer variable
-
-x = 1
-
-\# showing creating a function definition that takes 3 arguments
-
-def main (x, y, z):
-
-    # showing functioning if statement inside a function
-    
-    if works:
-    
-        while x < 12:
-            x -= 1
-            print(x)
-            x += 2
-        endwhile
-     
-    elif x == 2:
-        
-        # showing working nested if statement
-        
-        if not works:
-            print("4")
-        endif
-        
-        x = 1
-        while x == 1:
-            print("3")
-            x = y
-            y += 1
-        endwhile
-        
-    # showing functioning else statement inside a function
-    else:
-        print("HERE")
-    endif # shows end of complete if statement
-enddef # shows end of function definition
-
-if True:
-    x = 3 
-    x = 4
-endif
-    
-main(2, 1, 3)`
+[pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
 [Source.gv.pdf](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095240/Source.gv.pdf)
