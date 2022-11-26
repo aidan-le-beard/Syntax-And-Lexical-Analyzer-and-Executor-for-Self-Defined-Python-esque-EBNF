@@ -8,7 +8,7 @@
 
 
 
-This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip.
+This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip. This project tokenizes, parses, and executes code written in accordance with the below EBNF.
 
 To run the project:
 
