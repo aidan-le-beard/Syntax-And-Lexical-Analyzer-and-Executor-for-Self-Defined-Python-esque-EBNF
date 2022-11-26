@@ -51,7 +51,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
 
 #### Possible Method Parameters:
 
-\<parameter\> --\> \<id\> |  \<int_literal\> | \<FLOAT\> | \<string_literal\> | \<boolean\>   
+\<parameter\> --\> \<id\> |  \<int_literal\> | \<float\> | \<string_literal\> | \<boolean\>   
 
 
 #### Method call:
