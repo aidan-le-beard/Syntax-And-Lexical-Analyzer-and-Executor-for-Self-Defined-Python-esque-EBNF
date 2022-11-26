@@ -2,9 +2,9 @@
 
 
 
-## You do NOT have permission to use this code for any schoolwork purposes under any circumstances. 
+## You do NOT have permission to use this code OR EBNF for any schoolwork purposes under any circumstances. 
 
-## You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
+## You do NOT have permission to use this code OR EBNF for any commercial purposes without speaking to me to work out a deal.
 
 
 This project tokenizes, parses, and executes code written in accordance with the below EBNF.
