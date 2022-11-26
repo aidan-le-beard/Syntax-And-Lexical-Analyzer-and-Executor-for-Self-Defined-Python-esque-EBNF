@@ -7,8 +7,9 @@
 ## You do NOT have permission to use this code for any commercial purposes without speaking to me to work out a deal.
 
 
+This project tokenizes, parses, and executes code written in accordance with the below EBNF.
 
-This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip. This project tokenizes, parses, and executes code written in accordance with the below EBNF.
+This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip. 
 
 ### To execute:
 
