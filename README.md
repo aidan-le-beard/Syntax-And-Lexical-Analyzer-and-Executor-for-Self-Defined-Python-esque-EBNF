@@ -10,13 +10,15 @@
 
 This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip. This project tokenizes, parses, and executes code written in accordance with the below EBNF.
 
-To run the project:
+### To execute:
 
 1) open command prompt
 2) cd over to the folder where the files and test file are located
 3) run the command "python lexicalAnalyzerPyV21.py XXX.xxx"
 
 XXX.xxx should be a file written in the grammar of the following EBNF (this is essentially limited Python with endif, endwhile, and enddef statements, rather than indentation):
+
+### EBNF:
 
 #### OPERATOR PRECEDENCE / ASSIGNMENTS (EBNF):
 
@@ -100,7 +102,7 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 \<boolean\> --\> True | False
 
-### Sample File and Parse Tree Output
+### Sample File and Parse Tree Output:
 
 [pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
