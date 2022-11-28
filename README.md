@@ -11,7 +11,7 @@ This project tokenizes, parses, and executes code written in accordance with the
 
 This project uses Python from the command line, and uses the treelib and graphviz libraries, which can be downloaded using pip. 
 
-### To execute:
+### To execute on Windows:
 
 1) open command prompt
 2) cd over to the folder where the files and test file are located
