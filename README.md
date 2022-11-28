@@ -103,7 +103,7 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 \<boolean\> --\> True | False
 
-### Sample File and Parse Tree Output:
+### Sample File to be Parsed and its Parse Tree Output:
 
 [pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
