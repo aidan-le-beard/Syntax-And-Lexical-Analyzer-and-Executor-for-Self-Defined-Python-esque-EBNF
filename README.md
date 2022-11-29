@@ -75,7 +75,7 @@ XXX.xxx should be a file written in the grammar of the following EBNF (this is e
  
 #### EBNF IF WITH ENDIF: 
 
-\<if_statement\> --\> if \<expr\>: \n \<statement\> {\<statement\>} {elif \<expr\>: \n \<statement\>  {\<statement\>)} [else:\n \<statement\> {\<statement\>}] endif \n
+\<if_statement\> --\> if \<expr\>: \n \<statement\> {\<statement\>} {elif \<expr\>: \n \<statement\>  {\<statement\>}} [else:\n \<statement\> {\<statement\>}] endif \n
 
 
 #### Function definition EBNF:
