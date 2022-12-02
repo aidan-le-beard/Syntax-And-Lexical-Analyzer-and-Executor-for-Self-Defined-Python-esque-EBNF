@@ -107,8 +107,13 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 ![image](https://user-images.githubusercontent.com/33675444/205215337-568235f7-ebfe-406c-b834-5100f7bc0f78.png)
 
-### Larger Sample File to be Parsed and its Parse Tree Output:
+### Larger Output:
 
+# Test file being analyzed:
 [pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
+# Parse tree of above sample file:
 [Source.gv.pdf](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095240/Source.gv.pdf)
+
+# Final command line output of above sample file:
+![image](https://user-images.githubusercontent.com/33675444/205215675-6d7f16a8-fb2d-4afd-b029-21a39a2037e4.png)
