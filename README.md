@@ -103,7 +103,11 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 \<boolean\> --\> True | False
 
-### Sample File to be Parsed and its Parse Tree Output:
+### Small sample output for the command "works = True":
+
+![image](https://user-images.githubusercontent.com/33675444/205215337-568235f7-ebfe-406c-b834-5100f7bc0f78.png)
+
+### Larger Sample File to be Parsed and its Parse Tree Output:
 
 [pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
