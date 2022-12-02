@@ -109,11 +109,11 @@ Only allow strings with double quotes: “ “, not ‘ ‘ or “”” “”�
 
 ### Larger Output:
 
-# Test file being analyzed:
+#### Test file being analyzed:
 [pythontest2.txt](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095255/pythontest2.txt)
 
-# Parse tree of above sample file:
+#### Parse tree of above sample file:
 [Source.gv.pdf](https://github.com/aidan-le-beard/Syntax-Lexical-Analyzer-and-Executor-for-Self-Defined-Python-esque-EBNF/files/10095240/Source.gv.pdf)
 
-# Final command line output of above sample file:
+#### Final command line output of above sample file:
 ![image](https://user-images.githubusercontent.com/33675444/205215675-6d7f16a8-fb2d-4afd-b029-21a39a2037e4.png)
